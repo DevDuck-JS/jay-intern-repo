@@ -41,6 +41,8 @@ Weak API security can lead to unauthorized access.
 
 ### 🔐 Best Practices for Remote Work Security
 
+Given the common threats in remote working environment from the previous question, here are the best practices to stay safe:
+
 ✔️ **Use a VPN** when accessing company resources.  
 ✔️ **Enable multi-factor authentication (MFA)** for all accounts.  
 ✔️ **Update software & security patches** regularly.  
