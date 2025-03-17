@@ -18,13 +18,13 @@ I use ChatGPT to learn new concepts, answers my questions. Perplexity and Notebo
 
 #### 2️⃣ What are the benefits and risks of using AI in a professional setting?
 
-** Benefits: **
+**Benefits:**
 
 - Increases efficiency and automates repetitive tasks.
 - Improves decision-making by analyzing large data sets.
 - Enhances creativity by generating ideas and content.
 
-** Risks: **
+**Risks:**
 
 - May produce inaccurate or biased outputs.
 - Could expose confidential data if used improperly.
