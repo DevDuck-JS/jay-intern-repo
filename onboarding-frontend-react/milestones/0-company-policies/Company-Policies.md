@@ -10,7 +10,7 @@ Understand how to keep company and user data secure by following cyber security 
 
 Cyber security breaches can lead to data leaks, financial loss, and reputational damage. Everyone at Focus Bear plays a role in keeping information safe by following good security habits.
 
-### Research & Learn
+### 🔍 Research & Learn
 
 #### 1️⃣ Common Cyber Security Threats in a Remote Work Environment
 
@@ -94,7 +94,7 @@ YubiKey, on the other hand, is a hardware security key that provides even strong
 
 These tools help prevent unauthorized access, even if someone steals your password. Use them for important accounts like emails, banking, and work apps.
 
-### Reflection
+### 📝 Reflection
 
 #### 1️⃣ What security measures do you currently follow, and where can you improve?
 
@@ -133,7 +133,7 @@ If I suspect a security breach, I will:
 
 By acting quickly, I can minimize potential damage and secure my accounts effectively.
 
-### Reflection
+### 🛠️ Tasks
 
 #### Ensure your work accounts have strong passwords and enable 2FA where possible.
 
