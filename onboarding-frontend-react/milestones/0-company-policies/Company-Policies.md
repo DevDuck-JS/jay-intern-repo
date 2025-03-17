@@ -132,3 +132,33 @@ If I suspect a security breach, I will:
 5. Scan my device for malware to rule out keyloggers or other threats.
 
 By acting quickly, I can minimize potential damage and secure my accounts effectively.
+
+### Reflection
+
+#### Ensure your work accounts have strong passwords and enable 2FA where possible.
+
+I have been using 2FA with every accounts on every applications and devices.
+
+#### Review your password storage method—if you’re not using a password manager, consider setting one up.
+
+I already use it.
+
+#### Set up your computer and phone to automatically lock (require a password or biometric login) if you are away for more than a few minutes
+
+I have a habit of locking my computer every time I'm away even for 5 minutes.
+
+#### Document one new cyber security habit you will follow at Focus Bear.
+
+I have been familiar to security strategies. However, there is always a room to enhance my security practice when entering into a new environment.
+
+A new cybersecurity habit I will follow at Focus Bear is verifying all software and tools before installation.
+
+I will ensure that any new applications, browser extensions, or cloud services I use for work are approved by the company and do not introduce security risks. This will help prevent Shadow IT, unauthorized data storage, and potential malware threats.
+
+Before using any third-party tools, I will:
+
+- Check if it is company-approved or request IT approval.
+- Verify the software source to avoid downloading from untrusted sites.
+- Review permissions to ensure it does not request excessive access.
+
+Following this habit helps maintain a secure digital workspace at Focus Bear and reduce the risk of data leaks or security vulnerabilities.
