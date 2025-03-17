@@ -135,19 +135,19 @@ By acting quickly, I can minimize potential damage and secure my accounts effect
 
 ### 🛠️ Tasks
 
-#### Ensure your work accounts have strong passwords and enable 2FA where possible.
+#### 1️⃣ Ensure your work accounts have strong passwords and enable 2FA where possible.
 
 I have been using 2FA with every accounts on every applications and devices.
 
-#### Review your password storage method—if you’re not using a password manager, consider setting one up.
+#### 2️⃣ Review your password storage method—if you’re not using a password manager, consider setting one up.
 
 I already use it.
 
-#### Set up your computer and phone to automatically lock (require a password or biometric login) if you are away for more than a few minutes
+#### 3️⃣ Set up your computer and phone to automatically lock (require a password or biometric login) if you are away for more than a few minutes
 
 I have a habit of locking my computer every time I'm away even for 5 minutes.
 
-#### Document one new cyber security habit you will follow at Focus Bear.
+#### 4️⃣ Document one new cyber security habit you will follow at Focus Bear.
 
 I have been familiar to security strategies. However, there is always a room to enhance my security practice when entering into a new environment.
 
