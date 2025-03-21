@@ -73,7 +73,7 @@ I love visualizing ideas. I have chalk pens in multiple colors to draws diagrams
 
 ### 🛠️ Task
 
-#### 1️⃣ Write your User Manual for Me using the structure below.
+#### 1️⃣ Write your User Manual for Me using the structure below
 
 ## 📖 User Manual for Jay
 

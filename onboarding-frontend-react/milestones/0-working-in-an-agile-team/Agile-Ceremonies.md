@@ -1,4 +1,4 @@
-# 🏆 Milestone: Company Policies
+# 🏆 Milestone: Working in an agile team
 
 ## Agile Ceremonies & Team Collaboration
 

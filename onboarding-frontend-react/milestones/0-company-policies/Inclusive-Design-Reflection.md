@@ -23,7 +23,7 @@ Vulnerable populations include individuals who experience barriers in accessing 
 - Elderly users who may struggle with new technologies
 - Individuals with mental health challenges (anxiety, depression)
 
-** Challenges they face in digital spaces: **
+**Challenges they face in digital spaces:**
 
 - Overwhelming interfaces with too much information
 - Difficult navigation due to cluttered layouts
@@ -97,7 +97,7 @@ For example, instead of writing a long, dense paragraph in a user guide, I will 
 
 I went through this thread posted on reddit (https://www.reddit.com/r/aspergirls/comments/uyxqta/autism_and_adhd_friendly_productivity_app/?rdt=44031) about productivity apps recommended for people austism and ADHD. A few application names popped up in the comments: Finch, and Tiimo.
 
-#### 2️⃣ Identify one design or communication improvement that could make Focus Bear more accessible.
+#### 2️⃣ Identify one design or communication improvement that could make Focus Bear more accessible
 
 ​To enhance Focus Bear's accessibility for neurodivergent users, integrating visual scheduling and timers can be highly effective. This approach is used by apps like Tiimo, which offers visual planners and timers to assist users with ADHD and Autism in managing their tasks and time more effectively.
 
@@ -106,7 +106,7 @@ Recommendation:
 - Implement Visual Schedules: Develop a feature that allows users to create color-coded daily overviews with drag-and-drop tasks, providing a clear visual representation of their day.​
 - Incorporate Visual Timers: Introduce timers that visually depict the passage of time, helping users maintain focus and manage transitions between tasks.​
 
-#### 3️⃣ Practice writing a clear, patient, and supportive response to a hypothetical user struggling with executive functioning.
+#### 3️⃣ Practice writing a clear, patient, and supportive response to a hypothetical user struggling with executive functioning
 
 "I really want to be productive, but I keep forgetting to use the app. Even when I do open it, I feel overwhelmed trying to plan my tasks. I don’t know where to start, and then I just end up avoiding everything."
 

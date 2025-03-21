@@ -75,7 +75,7 @@ I can also place a sticky note on my screen with a reminder to check my posture.
 
 I have a sit-stand desk, a memory-foam ergonomic chair, 2 external monitors, a laptop stand, a footrest. Everything is adjusted due to my physique (I really would like to share my workstation setup - big investment). 👍
 
-#### 2️⃣ Identify at least one piece of equipment that could improve your posture and comfort.
+#### 2️⃣ Identify at least one piece of equipment that could improve your posture and comfort
 
 As I mentioned, I have a few ergonomic items that help maintain my posture and focues. Descpite perfection coming from everything combined, I'd like to raise that my best investment is the ergonomic chair.
 
@@ -83,6 +83,6 @@ As I mentioned, I have a few ergonomic items that help maintain my posture and f
 
 After a day of following posture reminders, I felt less fatigue and more focused during work.
 
-#### 4️⃣ Document at least one workspace change or habit adjustment you made.
+#### 4️⃣ Document at least one workspace change or habit adjustment you made
 
 I added a routine of taking a break to stretch or push-up during the from time to time.

@@ -1,6 +1,6 @@
-# 🏆 Milestone: Company Policies
+# 🏆 Milestone: [title of this milestone]
 
-## [topic of this task]
+## [title of this topic]
 
 ### 🎯 Goal
 
