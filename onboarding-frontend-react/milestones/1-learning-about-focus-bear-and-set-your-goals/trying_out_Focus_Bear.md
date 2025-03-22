@@ -22,7 +22,7 @@ As per the **applications on my MacBook**, I have put the screenshot of my journ
 
 As per the **applications on my iPhone**,
 
-_I'm currently facing a blocker on how to install the app_
+I'm currently facing a blocker on how to install the app
 
 #### 4️⃣ Think about how the onboarding experience could be improved
 
