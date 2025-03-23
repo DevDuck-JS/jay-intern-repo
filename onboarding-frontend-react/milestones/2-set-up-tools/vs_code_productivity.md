@@ -6,6 +6,8 @@ Research VS Code shortcuts and list at least 10 shortcuts that you find useful (
 
 Categorise them into Navigation, Editing, Debugging, and Terminal Commands.
 
+- Already installed VS Code
+
 ## Write a reflection
 
 ### 🔍 Which shortcuts do you think will be the most useful in your daily work?
