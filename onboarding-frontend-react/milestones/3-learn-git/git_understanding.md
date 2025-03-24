@@ -69,7 +69,7 @@ I learned how important it is to communicate clearly and respectfully in code re
 
 I decided to keep the branch.
 
-(`***`)
+---
 
 ## 📌 Writing Meaningful Commit Messages
 
@@ -130,7 +130,7 @@ Poor messages (e.g., “fixed stuff”) offer no context, making it hard to unde
 
 #### 5️⃣ Commit and push your changes to GitHub ✅
 
-(`***`)
+---
 
 ## 📌 Debugging with `git bisect`
 
