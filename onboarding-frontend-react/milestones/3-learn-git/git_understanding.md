@@ -69,6 +69,8 @@ I learned how important it is to communicate clearly and respectfully in code re
 
 I decided to keep the branch.
 
+(`***`)
+
 ## 📌 Writing Meaningful Commit Messages
 
 ### 🎯 Goal
@@ -125,5 +127,37 @@ Clear commit messages make it easier for teammates to understand changes without
 ##### How can poor commit messages cause issues later?
 
 Poor messages (e.g., “fixed stuff”) offer no context, making it hard to understand the purpose of a change. This can slow down bug tracking, make merges riskier, and frustrate team members trying to trace the history or logic behind updates.
+
+#### 5️⃣ Commit and push your changes to GitHub ✅
+
+(`***`)
+
+## 📌 Debugging with `git bisect`
+
+### 🎯 Goal
+
+Learn how to use `git bisect` to identify which commit introduced a bug in a project.
+
+### 🛠️ Task
+
+#### 1️⃣ Research `git bisect` and how it helps in debugging
+
+#### 2️⃣ Create a test scenario
+
+##### Make a series of commits in your test repo
+
+##### Introduce a bug in one of the commits
+
+##### Use git bisect to track down the commit that introduced the issue
+
+#### 3️⃣ Experiment using your Git desktop client (or CLI if preferred)
+
+#### 4️⃣ Write reflections in git_understanding.md
+
+##### What does `git bisect` do?
+
+##### When would you use it in a real-world debugging situation?
+
+##### How does it compare to manually reviewing commits?
 
 #### 5️⃣ Commit and push your changes to GitHub ✅
