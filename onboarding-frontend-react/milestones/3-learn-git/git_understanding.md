@@ -246,6 +246,164 @@ I was surprised by how precise and powerful `git cherry-pick` is. It gave me ful
 
 Using `git checkout main -- <file>` was a safer way to reset just one file without undoing other changes in progress, which is something I didn’t realize was possible before.
 
-#### 4️⃣ Commit and push your changes to GitHub
+---
+
+## 📌 Merge Conflicts & Conflict Resolution
+
+### 🎯 Goal
+
+Understand what merge conflicts are, why they happen, and how to resolve them.
+
+### 🛠️ Task
+
+#### 1️⃣ Research what causes merge conflicts in Git.
+
+#### 2️⃣ Create a merge conflict in your test repo by:
+
+##### Creating a branch and editing a file.
+
+##### Switching back to main, making a conflicting edit in the same file, and committing it.
+
+##### Merging the branch back into main.
+
+#### 3️⃣ Use your Git desktop client to resolve the conflict.
+
+#### 4️⃣ Write about your experience in git_understanding.md:
+
+##### What caused the conflict?
+
+The merge conflict occurred because I made conflicting edits to the same line in the same file on two different branches. Specifically, I edited greeting.txt on both the main branch and a feature branch called update-greeting. When I tried to merge the feature branch back into main, Git couldn't automatically decide which change to keep.
+
+##### How did you resolve it?
+
+I used my Git desktop client (GitHub Desktop) to open the conflicted file. Git highlighted both versions of the change:
+
+- The version from HEAD (main)
+
+- The version from the merging branch
+
+I manually edited the file to choose the correct version—or combined both edits into a new line—and then marked the conflict as resolved. After that, I committed the merge.
+
+##### What did you learn?
+
+I learned that merge conflicts are normal in collaborative projects, especially when multiple people are working on the same file. The key is to stay calm, review the differences carefully, and communicate with teammates if needed.
+
+I also realized how helpful Git tools are in visualizing and resolving conflicts. Now I feel more confident in handling conflicts without panicking or accidentally overriding someone’s work.
+
+---
+
+## 📌 Branching & Team Collaboration
+
+### 🎯 Goal
+
+Understand the importance of branching, avoiding direct pushes to main, and following a structured review process.
+
+### 🛠️ Task
+
+#### 1️⃣ Create a new branch in your Git desktop client (e.g., GitHub Desktop, VS Code, SourceTree).
+
+#### 2️⃣ Make a small change in your repo and commit it to the new branch.
+
+#### 3️⃣ Switch back to main and check that your changes are not there.
+
+#### 4️⃣ Reflect on why teams use branches instead of pushing directly to main in git_understanding.md:
+
+##### Why is pushing directly to main problematic?
+
+##### How do branches help with reviewing code?
+
+##### What happens if two people edit the same file on different branches?
+
+---
+
+## 📌 Git Concepts: Staging vs. Committing
+
+### 🎯 Goal
+
+Understand the difference between staging and committing in Git by experimenting in your own repository.
+
+### 🛠️ Task
+
+#### 1️⃣ Research the difference between staging and committing.
+
+#### 2️⃣ Experiment with adding and committing files in your repo using either:
+
+##### The terminal (git add / git commit)
+
+##### A Git desktop client (e.g., GitHub Desktop, VS Code Git integration).
+
+#### 3️⃣ Modify a file and try the following:
+
+##### Stage it but don’t commit (git add <file> or equivalent in your client).
+
+##### Check the status (git status).
+
+##### Unstage the file (git reset HEAD <file> or equivalent).
+
+##### Commit the file and observe the difference.
+
+#### 4️⃣ Write a summary in git_understanding.md:
+
+##### What is the difference between staging and committing?
+
+##### Why does Git separate these two steps?
+
+##### When would you want to stage changes without committing?
+
+---
+
+## 📌
+
+### 🎯 Goal
+
+### 🛠️ Task
+
+#### 1️⃣
+
+#### 2️⃣
+
+#####
+
+#####
+
+#####
+
+#### 3️⃣
+
+#### 4️⃣
+
+#####
+
+#####
+
+#####
+
+---
+
+## 📌
+
+### 🎯 Goal
+
+### 🛠️ Task
+
+#### 1️⃣
+
+#### 2️⃣
+
+#####
+
+#####
+
+#####
+
+#### 3️⃣
+
+#### 4️⃣
+
+#####
+
+#####
+
+#####
 
 ---
