@@ -142,6 +142,16 @@ Learn how to use `git bisect` to identify which commit introduced a bug in a pro
 
 #### 1️⃣ Research `git bisect` and how it helps in debugging
 
+1. Initialize a test repo and make a series of commits:
+
+```
+git init bisect-demo
+cd bisect-demo
+echo "Version 1" > app.js
+git add .
+git commit -m "feat: initial version"
+```
+
 #### 2️⃣ Create a test scenario
 
 ##### Make a series of commits in your test repo
@@ -156,8 +166,86 @@ Learn how to use `git bisect` to identify which commit introduced a bug in a pro
 
 ##### What does `git bisect` do?
 
+git bisect uses binary search to help you identify the exact commit that introduced a bug. It automates the testing process by checking each commit between a known good and bad state.
+
 ##### When would you use it in a real-world debugging situation?
+
+I’d use git bisect when:
+
+- A bug was recently introduced, but I'm not sure which commit caused it
+- The project has many commits, and manually checking each one would be time-consuming
+- I can automate a test to detect the bug for each commit.
 
 ##### How does it compare to manually reviewing commits?
 
+`git bisect` is much faster and more efficient because it narrows down the culprit commit using binary search. Manual review requires checking each commit one by one, which is slow and error-prone—especially in large projects. It’s ideal when you have a repeatable way to test whether a commit is good or bad.
+
 #### 5️⃣ Commit and push your changes to GitHub ✅
+
+---
+
+## 📌 Advanced Git Commands & When to Use Them
+
+### 🎯 Goal
+
+Understand and experiment with advanced Git commands using your preferred Git desktop client.
+
+### 🛠️ Task
+
+#### 1️⃣ Research the following Git commands and test them in your repo
+
+##### `git checkout main -- <file>` – Restore a specific file from main without affecting other changes
+
+Restores a specific file from the main branch into the current working branch, without affecting other files. It’s useful for undoing local changes to one file or pulling a clean version from another branch.
+
+##### `git cherry-pick <commit>` – Apply a specific commit from another branch without merging the whole branch
+
+Applies a specific commit from one branch onto another. This is useful when you want to bring in a fix or feature without merging the entire branch history.
+
+##### `git log` – View commit history and understand how changes evolved
+
+Displays the full commit history, including author names, commit messages, and timestamps. You can view it in different formats, like compact (--oneline) or graphical (--graph).
+
+##### `git blame <file>` – See who last modified each line in a file and when
+
+Shows who last edited each line of a file, along with the commit hash and timestamp. It’s great for understanding when and why a specific line was changed.
+
+#### 2️⃣ Experiment with each command in your test repo
+
+##### Modify a file, then restore it using `checkout`
+
+##### Commit changes on a branch, then cherry-pick one commit onto `main`
+
+##### Use `git log` to explore the commit history
+
+##### Use `git blame` to see past changes in a file
+
+#### 3️⃣ Write reflections in `git_understanding.md`
+
+##### What does each command do?
+
+##### When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?
+
+`git checkout main -- <file>`
+When you accidentally mess up a config or key file and want to restore it from the main branch without reverting other progress.
+
+`git cherry-pick <commit>`
+When you want to apply a single bug fix or feature from a development branch into main without bringing unrelated changes.
+
+`git log`
+For tracking how a feature evolved, seeing who committed what, and helping in debugging or writing changelogs.
+
+`git blame`
+To understand who last modified a line of code, why it changed, or when a bug was introduced. Great for tracing regressions or reviewing legacy code.
+
+##### What surprised you while testing these commands?
+
+I was surprised by how precise and powerful `git cherry-pick` is. It gave me full control over what commits I wanted to include without needing to do a full merge.
+
+`git blame` was more insightful than expected—being able to trace the history line by line helped me understand code ownership and decision history.
+
+Using `git checkout main -- <file>` was a safer way to reset just one file without undoing other changes in progress, which is something I didn’t realize was possible before.
+
+#### 4️⃣ Commit and push your changes to GitHub
+
+---
