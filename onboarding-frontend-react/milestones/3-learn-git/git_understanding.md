@@ -248,7 +248,7 @@ Using `git checkout main -- <file>` was a safer way to reset just one file witho
 
 ---
 
-## 📌 Merge Conflicts & Conflict Resolution
+## 📌 Merge Conflicts & Conflict Resolution #49
 
 ### 🎯 Goal
 
@@ -292,7 +292,7 @@ I also realized how helpful Git tools are in visualizing and resolving conflicts
 
 ---
 
-## 📌 Branching & Team Collaboration
+## 📌 Branching & Team Collaboration #50
 
 ### 🎯 Goal
 
@@ -310,13 +310,19 @@ Understand the importance of branching, avoiding direct pushes to main, and foll
 
 ##### Why is pushing directly to main problematic?
 
+Pushing directly to main is risky because it bypasses the review process, which can lead to introducing bugs, breaking changes, or untested code into the production branch. It also increases the chances of merge conflicts and reduces team visibility into changes. Without peer review, code quality and consistency can suffer.
+
 ##### How do branches help with reviewing code?
+
+Branches let developers work on features, fixes, or experiments in isolation. Once the work is done, they can open a Pull Request (PR), allowing others to review the code, give feedback, and test it before merging into main. This promotes collaboration, improves code quality, and prevents unwanted changes from being merged prematurely.
 
 ##### What happens if two people edit the same file on different branches?
 
+If two people modify the same part of a file on separate branches, Git will detect a merge conflict when those branches are merged. The developer merging the branches must manually resolve the conflict by choosing which changes to keep or combining both changes. Good communication and frequent pulls from main reduce the chances and complexity of such conflicts.
+
 ---
 
-## 📌 Git Concepts: Staging vs. Committing
+## 📌 Git Concepts: Staging vs. Committing #51
 
 ### 🎯 Goal
 
@@ -346,9 +352,23 @@ Understand the difference between staging and committing in Git by experimenting
 
 ##### What is the difference between staging and committing?
 
+- Staging means selecting specific changes (files or parts of files) that you want to include in your next commit. It adds changes to the staging area, which is like a preview.
+
+- Committing actually saves the staged changes into the Git history with a message. It creates a snapshot of those changes in the repo.
+
 ##### Why does Git separate these two steps?
 
+Git separates staging and committing to give developers more control. You can stage only certain files (or parts of files) while continuing to work on others. This allows you to group related changes into clean, focused commits, improving readability, collaboration, and debugging.
+
 ##### When would you want to stage changes without committing?
+
+You might want to stage changes without committing when:
+
+- You’re reviewing your work and want to bundle only related changes into one commit.
+
+- You’re not finished writing your commit message or need time to double-check your changes.
+
+- You’re collaborating and want to prepare changes for review without pushing them yet.
 
 ---
 
