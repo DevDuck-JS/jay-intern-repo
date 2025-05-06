@@ -12,7 +12,7 @@ Understand the core principles of clean code and why they matter in real-world d
 
 ##### Simplicity – Keep code as simple as possible.
 
-Keep code as simple as possible—avoid unnecessary complexity. Use straightforward logic and avoid clever hacks that are hard to follow.
+Keep code as simple as possible, avoid unnecessary complexity. Use straightforward logic and avoid clever hacks that are hard to follow.
 Example: Prefer if (user.isActive) over complex nested ternary operators.
 
 ##### Readability – Code should be easy to understand.
@@ -559,7 +559,80 @@ Understand the purpose of Continuous Integration (CI) and Continuous Deployment 
 
 #### 1️⃣ Research what CI/CD is and why it’s used in software development.
 
+- Markdown linting via markdownlint-cli2
+- Spell checking via cspell
+
+```
+.github/workflows/lint-and-spellcheck.yml
+```
+
 #### 2️⃣ Set up a CI workflow that runs Markdown linting and spell checks on PRs in your repo.
+
+```
+name: Markdown Lint and Spell Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  markdown-check:
+    name: Run markdownlint and cspell
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install markdownlint and cspell
+        run: |
+          npm install -g markdownlint-cli2 cspell
+
+      - name: Run markdownlint
+        run: |
+          markdownlint-cli2 "**/*.md" "#node_modules"
+
+      - name: Run spell check
+        run: |
+          cspell "**/*.md"
+```
+
+Optional: Add cspell.json config (in the root folder)
+
+```
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": ["typescript", "node", "softwareTerms"],
+  "ignorePaths": ["node_modules", "dist", ".github"],
+  "ignoreWords": ["ci", "eslint", "markdownlint", "prettier", "vite"]
+}
+```
+
+Optional: Add markdownlint.json config
+
+```
+{
+  "default": true,
+  "MD013": false, // ignore line length rule
+  "MD033": false  // allow inline HTML in markdown
+}
+```
+
+Commit structure suggestion
+
+```
+mkdir -p .github/workflows
+touch .github/workflows/lint-and-spellcheck.yml
+npm init -y
+npm install --save-dev markdownlint-cli2 cspell
+```
 
 #### 3️⃣ Experiment with Git Hooks (e.g., Husky) to enforce linting before commits.
 
@@ -643,14 +716,16 @@ Learn how to recognize common code smells and refactor them for better readabili
 
 Before
 
-```function calculateTax(amount) {
+```
+function calculateTax(amount) {
   return amount * 0.07; // 7% tax hardcoded
 }
 ```
 
 After
 
-```const TAX_RATE = 0.07;
+```
+const TAX_RATE = 0.07;
 
 function calculateTax(amount) {
   return amount * TAX_RATE;
@@ -787,7 +862,8 @@ Learn how writing unit tests helps maintain clean and reliable code.
 
 Sample Function (to be tested)
 
-```// math.js
+```
+// math.js
 function add(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error("Inputs must be numbers");

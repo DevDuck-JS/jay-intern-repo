@@ -1,0 +1,6 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["FocusBear", "Auth0", "GitHub", "DevTools"],
+  "ignorePaths": ["node_modules", "dist"]
+}

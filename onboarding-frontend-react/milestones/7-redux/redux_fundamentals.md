@@ -12,7 +12,90 @@ Manage global state effectively using Redux Toolkit.
 
 #### 1️⃣ Install Redux Toolkit and React Redux.
 
+Run this in the root directory:
+
+```
+npm install @reduxjs/toolkit react-redux
+```
+
 #### 2️⃣ Create a Redux store and configure a slice for a counter.
+
+Create a file: src/redux/store.js
+
+```
+// src/redux/store.js
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from './counterSlice';
+
+export const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});
+```
+
+Create a file: src/redux/counterSlice.js
+
+```
+// src/redux/counterSlice.js
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+  value: 0,
+};
+
+export const counterSlice = createSlice({
+  name: 'counter',
+  initialState,
+  reducers: {
+    increment: (state) => {
+      state.value += 1;
+    },
+    decrement: (state) => {
+      state.value -= 1;
+    },
+  },
+});
+
+export const { increment, decrement } = counterSlice.actions;
+export default counterSlice.reducer;
+```
+
+Create a file or update src/components/Counter.js
+
+```
+// src/components/Counter.js
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from '../redux/counterSlice';
+
+const Counter = () => {
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
+      <h1 className="text-2xl font-bold mb-4">Count: {count}</h1>
+      <div className="space-x-4">
+        <button
+          onClick={() => dispatch(decrement())}
+          className="bg-red-500 text-white px-4 py-2 rounded"
+        >
+          -
+        </button>
+        <button
+          onClick={() => dispatch(increment())}
+          className="bg-blue-500 text-white px-4 py-2 rounded"
+        >
+          +
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Counter;
+```
 
 #### 3️⃣ Use useSelector and useDispatch to connect Redux to the Counter.js component.
 

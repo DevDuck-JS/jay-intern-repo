@@ -147,6 +147,8 @@ export default Counter;
 
 #### 2️⃣ Create a Button component with Tailwind styling.
 
+#### 3️⃣ Add hover and active states using Tailwind utilities.
+
 ```
 // src/components/Button.js
 import React from 'react';
@@ -165,7 +167,13 @@ const Button = ({ children, onClick }) => {
 export default Button;
 ```
 
-#### 3️⃣ Add hover and active states using Tailwind utilities.
+This includes:
+
+- `hover:bg-blue-600` → background color darkens on hover.
+
+- `active:bg-blue-700` → background color changes again when actively clicked.
+
+- `transition-colors` → smooth transitions between states.
 
 #### 4️⃣ Push your styled components to GitHub.
 
@@ -208,6 +216,10 @@ Learn to handle lists dynamically in React.
 ### 🛠️ Task
 
 #### 1️⃣ Create a simple form with an input field and a button.
+
+#### 2️⃣ When the user enters text and clicks the button, add the text to a list.
+
+#### 3️⃣ Display the list dynamically using .map().
 
 ```
 // src/components/TodoList.js
@@ -254,10 +266,6 @@ const TodoList = () => {
 
 export default TodoList;
 ```
-
-#### 2️⃣ When the user enters text and clicks the button, add the text to a list.
-
-#### 3️⃣ Display the list dynamically using .map().
 
 #### 4️⃣ Push your form component to GitHub.
 
@@ -388,6 +396,10 @@ npm install formik yup
 - Email (validated with Formik & Yup)
 - A submit button
 
+#### 3️⃣ Use Formik’s useFormik hook or <Formik> component for form handling.
+
+#### 4️⃣ Implement basic validation using Yup.
+
 ```
 // FormikForm.js
 import React from 'react';
@@ -452,10 +464,6 @@ function FormikForm() {
 
 export default FormikForm;
 ```
-
-#### 3️⃣ Use Formik’s useFormik hook or <Formik> component for form handling.
-
-#### 4️⃣ Implement basic validation using Yup.
 
 #### 5️⃣ Push your form component to GitHub.
 
